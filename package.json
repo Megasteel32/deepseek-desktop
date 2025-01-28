@@ -8,7 +8,7 @@
     "build": "electron-builder"
   },
   "keywords": [],
-  "author": "doxdk",
+  "author": "doxdk <placeholder@email.com>",
   "license": "ISC",
   "description": "A desktop version of DeepSeek, an AI-powered application that provides intelligent assistance and interaction. This application allows users to access DeepSeek's chat interface directly from their desktop, with support for local storage and cookies.",
   "devDependencies": {
@@ -41,7 +41,10 @@
       "icon": "deepseek-logo.png"
     },
     "linux": {
-      "target": "AppImage",
+      "target": [
+	"AppImage",
+	"deb"
+	],
       "icon": "deepseek-logo.png"
     }
   }
