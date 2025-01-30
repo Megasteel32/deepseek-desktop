@@ -39,7 +39,7 @@ jobs:
         name: deepseek-desktop-${{ matrix.os }}
         path: dist/
 
-  release:
+  spread:
     needs: build
     runs-on: ubuntu-latest
     permissions:
